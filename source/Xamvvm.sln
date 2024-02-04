@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamvvm.Core", "Xamvvm.Core\Xamvvm.Core.csproj", "{86124AC2-DCF7-4BBA-A303-93147CF1FA87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xamvvm.Core", "Xamvvm.Core\Xamvvm.Core.csproj", "{86124AC2-DCF7-4BBA-A303-93147CF1FA87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamvvm.Forms", "Xamvvm.Forms\Xamvvm.Forms.csproj", "{A02E864B-6EA9-4D75-8B69-45D6D12FC2DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xamvvm.Forms", "Xamvvm.Forms\Xamvvm.Forms.csproj", "{A02E864B-6EA9-4D75-8B69-45D6D12FC2DF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6F14E403-8875-436E-9A30-EE03D9F4BE8B}"
 	ProjectSection(SolutionItems) = preProject
@@ -17,23 +17,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{BB3F8074-2150-4C01-A68B-53A9F9EE9752}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamvvm.Forms.RxUI", "Xamvvm.Forms.RxUI\Xamvvm.Forms.RxUI.csproj", "{8F5804F7-7AAB-4C72-80E7-7130BD15D70A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xamvvm.Forms.RxUI", "Xamvvm.Forms.RxUI\Xamvvm.Forms.RxUI.csproj", "{8F5804F7-7AAB-4C72-80E7-7130BD15D70A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExamplesRxUI", "ExamplesRxUI", "{D66B19CD-BB50-4C40-A98B-34A5A6F03C9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples", "..\examples\ExamplesForms\Examples\Examples.csproj", "{322279E7-3097-491D-A81B-C2700AACA090}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Examples", "..\examples\ExamplesForms\Examples\Examples.csproj", "{322279E7-3097-491D-A81B-C2700AACA090}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.Droid", "..\examples\ExamplesForms\Droid\Examples.Droid.csproj", "{C4795BCC-9598-4D73-AC6A-B522A954EAA9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.iOS", "..\examples\ExamplesForms\iOS\Examples.iOS.csproj", "{5E3E2972-2D0B-466E-856A-038E73591B6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamplesRxUI", "..\examples\ExamplesFormsRxUI\ExamplesRxUI\ExamplesRxUI.csproj", "{F7B20921-508B-4E35-9205-8F51010939F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExamplesRxUI", "..\examples\ExamplesFormsRxUI\ExamplesRxUI\ExamplesRxUI.csproj", "{F7B20921-508B-4E35-9205-8F51010939F9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamplesRxUI.Droid", "..\examples\ExamplesFormsRxUI\ExamplesRxUI.Droid\ExamplesRxUI.Droid.csproj", "{A20273A7-DBBE-4DC1-BB88-EA5F41F6CE49}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleRxUI.UWP", "..\examples\ExamplesFormsRxUI\ExamplesRxUI.UWP\ExampleRxUI.UWP.csproj", "{0128A3BD-99BF-472E-B23B-4CC48C5214E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamvvm.Mock", "Xamvvm.Mock\Xamvvm.Mock.csproj", "{D9C591AB-1F3C-40CB-BD7B-DBA410CD19F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xamvvm.Mock", "Xamvvm.Mock\Xamvvm.Mock.csproj", "{D9C591AB-1F3C-40CB-BD7B-DBA410CD19F8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamplesRxUI.iOS", "..\examples\ExamplesFormsRxUI\ExamplesRxUI.iOS\ExamplesRxUI.iOS.csproj", "{0D0189A5-2AD2-4221-B1ED-3623A02D539B}"
 EndProject
@@ -46,6 +46,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TemplatePack", "TemplatePack", "{5C5A4D82-B8CB-4261-996D-8589B329E7EE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamvvmTemplatePack.VSMac", "XamvvmTemplatePack.VSMac\XamvvmTemplatePack.VSMac.csproj", "{515147C5-35C2-4EDD-AE90-C9D3E05D6A00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamvvm.Maui", "Xamvvm.Maui\Xamvvm.Maui.csproj", "{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -772,6 +774,54 @@ Global
 		{515147C5-35C2-4EDD-AE90-C9D3E05D6A00}.Release|x64.Build.0 = Release|Any CPU
 		{515147C5-35C2-4EDD-AE90-C9D3E05D6A00}.Release|x86.ActiveCfg = Release|Any CPU
 		{515147C5-35C2-4EDD-AE90-C9D3E05D6A00}.Release|x86.Build.0 = Release|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Ad-Hoc|Any CPU.ActiveCfg = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Ad-Hoc|Any CPU.Build.0 = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Ad-Hoc|ARM.ActiveCfg = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Ad-Hoc|ARM.Build.0 = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Ad-Hoc|iPhone.ActiveCfg = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Ad-Hoc|iPhone.Build.0 = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Ad-Hoc|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Ad-Hoc|x64.ActiveCfg = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Ad-Hoc|x64.Build.0 = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Ad-Hoc|x86.ActiveCfg = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Ad-Hoc|x86.Build.0 = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.AppStore|Any CPU.ActiveCfg = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.AppStore|Any CPU.Build.0 = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.AppStore|ARM.ActiveCfg = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.AppStore|ARM.Build.0 = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.AppStore|iPhone.ActiveCfg = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.AppStore|iPhone.Build.0 = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.AppStore|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.AppStore|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.AppStore|x64.ActiveCfg = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.AppStore|x64.Build.0 = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.AppStore|x86.ActiveCfg = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.AppStore|x86.Build.0 = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Debug|ARM.Build.0 = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Debug|x64.Build.0 = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Debug|x86.Build.0 = Debug|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Release|ARM.ActiveCfg = Release|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Release|ARM.Build.0 = Release|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Release|iPhone.Build.0 = Release|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Release|x64.ActiveCfg = Release|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Release|x64.Build.0 = Release|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Release|x86.ActiveCfg = Release|Any CPU
+		{23FB4E28-F3A9-4FB6-81CE-C556B950DC56}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -787,6 +837,9 @@ Global
 		{AA1EABA5-1EBE-4005-873E-2EE6DE792AC2} = {9F9BD4B9-305F-46F5-BEA1-ADCC78B25BE9}
 		{5C79AFFB-D3F7-4B8F-A284-C83B9C529F72} = {BB3F8074-2150-4C01-A68B-53A9F9EE9752}
 		{515147C5-35C2-4EDD-AE90-C9D3E05D6A00} = {5C5A4D82-B8CB-4261-996D-8589B329E7EE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {43BD019F-9257-47AD-A276-77DE810B3632}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		Policies = $0
