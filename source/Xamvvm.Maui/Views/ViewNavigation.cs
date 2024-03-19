@@ -22,7 +22,7 @@ namespace Xamvvm
 
 		protected virtual View CreateView(Type modelType)
 		{
-			var viewType = ((XamvvmFormsFactory)XamvvmCore.CurrentFactory).GetViewType(modelType);
+			var viewType = ((XamvvmMauiFactory)XamvvmCore.CurrentFactory).GetViewType(modelType);
 			View view = XamvvmIoC.Resolve(viewType) as View;
 			view.BindingContext = XamvvmIoC.Resolve(modelType);
 

@@ -1,7 +1,7 @@
 ﻿namespace Xamvvm.Maui.Factory
 {
-    public partial class XamvvmFormsFactory : IBaseFactory
-    {
+	public partial class XamvvmMauiFactory : IBaseFactory
+	{
 		IBaseLogger logger;
 		public IBaseLogger Logger
 		{
@@ -34,44 +34,44 @@
 
 		public virtual void SetPageModel<TPageModel>(IBasePage<TPageModel> page, TPageModel newPageModel) where TPageModel : class, IBasePageModel
 		{
-            var formsPage = (Page)page;
+			var formsPage = (Page)page;
 
-            var oldVisChange = formsPage.BindingContext as IPageVisibilityChange;
-            if (oldVisChange != null)
-            {
-                formsPage.Appearing -= FormsPage_Appearing;
-                formsPage.Disappearing -= FormsPage_Disappearing;
-            }
+			var oldVisChange = formsPage.BindingContext as IPageVisibilityChange;
+			if (oldVisChange != null)
+			{
+				formsPage.Appearing -= FormsPage_Appearing;
+				formsPage.Disappearing -= FormsPage_Disappearing;
+			}
 
 			formsPage.BindingContext = newPageModel;
 
-            var newVisChange = newPageModel as IPageVisibilityChange;
-            if (newVisChange != null)
-            {
-                formsPage.Appearing += FormsPage_Appearing;
-                formsPage.Disappearing += FormsPage_Disappearing;
-            }
+			var newVisChange = newPageModel as IPageVisibilityChange;
+			if (newVisChange != null)
+			{
+				formsPage.Appearing += FormsPage_Appearing;
+				formsPage.Disappearing += FormsPage_Disappearing;
+			}
 
 			AddToWeakCacheIfNotExists(page, newPageModel);
 		}
 
-        void FormsPage_Appearing(object sender, EventArgs e)
-        {
-            var model = ((sender as Page).BindingContext as IPageVisibilityChange);
-            if (model != null)
-            {
-                model.OnAppearing();
-            }
-        }
+		void FormsPage_Appearing(object sender, EventArgs e)
+		{
+			var model = ((sender as Page).BindingContext as IPageVisibilityChange);
+			if (model != null)
+			{
+				model.OnAppearing();
+			}
+		}
 
-        void FormsPage_Disappearing(object sender, EventArgs e)
-        {
-            var model = ((sender as Page).BindingContext as IPageVisibilityChange);
-            if (model != null)
-            {
-                model.OnDisappearing();
-            }
-        }
-    }
+		void FormsPage_Disappearing(object sender, EventArgs e)
+		{
+			var model = ((sender as Page).BindingContext as IPageVisibilityChange);
+			if (model != null)
+			{
+				model.OnDisappearing();
+			}
+		}
+	}
 }
 

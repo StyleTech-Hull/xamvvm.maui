@@ -1,6 +1,6 @@
 namespace Xamvvm.Maui.Factory
 {
-    public partial class XamvvmFormsFactory : IBaseFactoryNavigation
+    public partial class XamvvmMauiFactory : IBaseFactoryNavigation
     {
 		public async virtual Task<bool> PushPageAsync<TCurrentPageModel, TPageModel>(IBasePage<TCurrentPageModel> currentPage, IBasePage<TPageModel> pageToPush, bool animated = true) where TCurrentPageModel : class, IBasePageModel where TPageModel : class, IBasePageModel
 		{

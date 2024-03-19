@@ -11,7 +11,7 @@ namespace Examples.Maui
 		{
 			InitializeComponent();
 
-			var factory = new XamvvmFormsFactory(this);
+			var factory = new XamvvmMauiFactory(this);
 			factory.RegisterNavigationPage<MainNavigationPageModel>(() => this.GetPageFromCache<MainPageModel>());
 			XamvvmCore.SetCurrentFactory(factory);
 			MainPage = this.GetPageFromCache<MainNavigationPageModel>() as NavigationPage;

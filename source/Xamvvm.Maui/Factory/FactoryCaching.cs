@@ -2,7 +2,7 @@
 
 namespace Xamvvm.Maui.Factory
 {
-    public partial class XamvvmFormsFactory : IBaseFactoryCaching
+    public partial class XamvvmMauiFactory : IBaseFactoryCaching
     {
 		public virtual IBasePage<TPageModel> GetPageFromCache<TPageModel>(TPageModel setPageModel = null, string cacheKey = null) where TPageModel : class, IBasePageModel
 		{
