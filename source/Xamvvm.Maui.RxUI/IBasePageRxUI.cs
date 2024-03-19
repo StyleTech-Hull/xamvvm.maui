@@ -1,8 +1,7 @@
 using System.ComponentModel;
 using ReactiveUI;
-using Xamvvm;
 
-namespace Xamvvm
+namespace Xamvvm.Maui.RxUI
 {
 
     public interface IBasePageRxUI<TPageModel> : IBasePage<TPageModel>, IViewFor<TPageModel> where TPageModel : class, IBasePageModel, INotifyPropertyChanged

@@ -1,11 +1,7 @@
-using System;
 using System.ComponentModel;
-using ReactiveUI;
-using ReactiveUI.XamForms;
-using Xamarin.Forms;
-using Xamvvm;
+using ReactiveUI.Maui;
 
-namespace Xamvvm
+namespace Xamvvm.Maui.RxUI.Implementations
 {
     public class BaseTabbedPageRxUI<TPageModel> : ReactiveTabbedPage<TPageModel>, IBasePageRxUI<TPageModel> where TPageModel : class, IBasePageModel, INotifyPropertyChanged
     {

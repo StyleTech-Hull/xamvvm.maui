@@ -1,12 +1,9 @@
-using System;
-using ReactiveUI;
-using Xamarin.Forms;
-using ReactiveUI.XamForms;
 using System.ComponentModel;
+using ReactiveUI.Maui;
 
-namespace Xamvvm
+namespace Xamvvm.Maui.RxUI.Implementations
 {
 	public class BaseMasterDetailPageRxUI<TPageModel> : ReactiveMasterDetailPage<TPageModel>,  IBasePageRxUI<TPageModel> where TPageModel : class, IBasePageModel, INotifyPropertyChanged
-    {
-    }
+	{
+	}
 }

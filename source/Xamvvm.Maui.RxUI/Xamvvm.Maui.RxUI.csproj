@@ -18,24 +18,24 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
-		
+
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<PackageId>Xamvvm.Maui</PackageId>
+		<PackageId>Xamvvm.Maui.RxUI</PackageId>
 		<Version>1.0.0</Version>
 		<Authors>Daniel Luberda, Thomas Burkhart, StyleTech Solutions</Authors>
 		<PackageProjectUrl>https://github.com/StyleTech-Hull/xamvvm.maui/</PackageProjectUrl>
 		<RepositoryUrl>$(ProjectUrl)</RepositoryUrl>
 		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-		<Title>Xamvvm.Maui</Title>
-		<Product>Xamvvm.Maui</Product>
-		<Description>Simple MVVM (Model, ViewModel, View) Framework for .Net - .NET MAUI compatible</Description>
+		<Title>Xamvvm.Maui.RxUI</Title>
+		<Product>Xamvvm.Maui.RxUI</Product>
+		<Description>Simple MVVM (Model, ViewModel, View) Framework for .Net - .NET MAUI ReactiveUI compatible</Description>
 		<Company>StyleTech Solutions</Company>
 		<PackageIcon>22848116.png</PackageIcon>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<RepositoryType>git</RepositoryType>
-		<PackageTags>maui;xamarin;forms;xamarin.forms;mvvm;pagefactory;inotifypropertychanged;notifypropertychanged;caching;viewmodel;xamvvm</PackageTags>
+		<PackageTags>maui;xamarin;forms;xamarin.forms;mvvm;pagefactory;inotifypropertychanged;notifypropertychanged;caching;viewmodel;xamvvm;RxUI</PackageTags>
 		<PackageReleaseNotes>Initial release of Maui version of Xamvvm</PackageReleaseNotes>
-		<PackageLicenseFile>LICENSE</PackageLicenseFile>		
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		
 	</PropertyGroup>
 
@@ -63,10 +63,12 @@
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
+		<PackageReference Include="ReactiveUI.Maui" Version="19.5.72" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\Xamvvm.Core\Xamvvm.Core.csproj" PrivateAssets="All" />
+		<ProjectReference Include="..\Xamvvm.Core\Xamvvm.Core.csproj" />
+		<ProjectReference Include="..\Xamvvm.Maui\Xamvvm.Maui.csproj" />
 	</ItemGroup>
 
 </Project>
