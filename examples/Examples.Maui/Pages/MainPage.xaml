@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pageModels="using:Examples.Maui.PageModels"
+             x:Class="Examples.Maui.Pages.MainPage"
+             x:DataType="pageModels:MainPageModel"
+             Title="Main Page">
+    <StackLayout
+        Spacing="10"    
+        Margin="10"
+    >
+        <Label Text="{Binding WelcomeText}" VerticalOptions="Center" HorizontalOptions="Center" />
+
+        <Label Text="DetailPage:"/>
+        <Button Text="Red Detail" Command="{Binding DetailButtonCommand}" CommandParameter="red"/>
+        <Button Text="Green Detail" Command="{Binding DetailButtonCommand}" CommandParameter="green"/>
+        <Button Text="Blue Detail" Command="{Binding DetailButtonCommand}" CommandParameter="blue"/>
+
+        <Label Text="DemoListViewPage:"/>
+        <Button Text="Demo List" Command="{Binding DemoListButtonCommand}"/>
+
+        <Label Text="Flyout:"/>
+        <Button Text="Flyout" Command="{Binding MasterDetailButtonCommand}"/>
+
+        <Label Text="NavigationView:"/>
+        <Button Text="NavigationView" Command="{Binding NavigationViewButtonCommand}"/>
+    </StackLayout>
+</ContentPage>

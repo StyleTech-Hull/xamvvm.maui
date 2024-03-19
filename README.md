@@ -1,10 +1,14 @@
 # ![xamvvm](http://res.cloudinary.com/escamoteur/image/upload/c_scale,w_150/v1476723686/xamvvm2_ufjcqq.png) 
-# Simple, fast and lightweight MVVM Framework for Xamarin.Forms with fluent API [![AppVeyor][ci-img]][ci-link]
+# Simple, fast and lightweight MVVM Framework for .Net Maui with fluent API
 
-|         Xamvvm.Core         |             Xamvvm.Forms             |         Xamvvm.Forms.RxUI          |          Xamvvm.Mock (Unit Tests)         |
-|:-------------------------------------:|:-------------------------------------:|:---------------------------------:|:---------------------------------:|
-|    [![NuGet][core-img]][core-link]    |   [![NuGet][forms-img]][forms-link]   |  [![NuGet][rx-img]][rx-link]  | [![NuGet][mock-img]][mock-link] |
-|    [![NuGet][precore-img]][precore-link]    |   [![NuGet][preforms-img]][preforms-link]   |  [![NuGet][prerx-img]][prerx-link]  | [![NuGet][premock-img]][premock-link] |                |
+|  Xamvvm.Forms             |         Xamvvm.Forms.RxUI          |
+|-------------------------------------:|:---------------------------------:|
+|  [![NuGet][maui-img]][maui-link]   |  [![NuGet][rx-img]][rx-link]  |
+
+## Background
+This is a fork of https://github.com/xamvvm/xamvvm to provide .Net MAUI support.
+
+Newer packages maybe better suited for fresh projects but this should help any existing Xamarin Forms projects in the transition to .Net MAUI.
 
 ## Features
 
@@ -29,7 +33,7 @@
 You have to create an instance of a IBaseFactory implementation and set it as the current factory to use
 
 ```C#
-var factory = new XamvvmFormsFactory(this);
+var factory = new XamvvmMauiFactory(this);
 XamvvmCore.SetCurrentFactory(factory);
 ```
 
@@ -54,11 +58,11 @@ this.PushPageFromCache<DetailPageModel>();
 You can pass an int action too that is executed on the Pagemodel before displaying the page
 
 ```C#
-await this.PushPageAsync(pageToPush, (pm) => pm.Init("blue", Color.Blue));
+await this.PushPageAsync(pageToPush, (pm) => pm.Init("blue", Colors.Blue));
 
 // OR even shorter way:
 var pageToPush = this.GetPageFromCache<DetailPageModel>();
-this.PushPageFromCache<DetailPageModel>((pm) => pm.Init("blue", Color.Blue));
+this.PushPageFromCache<DetailPageModel>((pm) => pm.Init("blue", Colors.Blue));
 ```
 
 Popping is as easy
@@ -82,7 +86,7 @@ public partial class DetailPage : ContentPage, IBasePage<DetailPageModel>
 
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Examples.DetailPage"
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Examples.DetailPage"
 		Title="Detail Page">
 	<ContentPage.Content>
 		<Label Text="{Binding Text}" BackgroundColor="{Binding Color}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
@@ -116,33 +120,17 @@ public class DetailPageModel : BasePageModel
 <sub>You don't have to inherit from BasePageModel it's just an included convinience class</sub>
 
 
-Please look into the [Wiki](https://github.com/xamvvm/xamvvm/wiki) for Detailed Information
+Please look into the [Wiki](https://github.com/StyleTech-Hull/xamvvm.maui/wiki) for Detailed Information
 
 ## Support
-Please ask questions in [this issue](https://github.com/xamvvm/xamvvm/issues/16)
-We also have a channel in the xamarin slack channel **#xamvvm** (invitation https://xamarinchat.herokuapp.com/)
+Limited support is provided but we welcome any PRs to correct any improvements or issues you have found
 
 ## Example project
 
-https://github.com/xamvvm/xamvvm/tree/master/examples
+https://github.com/StyleTech-Hull/xamvvm.maui/tree/development/examples
 
-[ci-img]: https://img.shields.io/appveyor/ci/daniel-luberda/xamvvm.svg
-[ci-link]: https://ci.appveyor.com/project/daniel-luberda/xamvvm
+[maui-img]: https://img.shields.io/nuget/v/Xamvvm.Maui.svg
+[maui-link]: https://www.nuget.org/packages/Xamvvm.Maui
+[rx-img]: https://img.shields.io/nuget/v/Xamvvm.Maui.RxUI.svg
+[rx-link]: https://www.nuget.org/packages/Xamvvm.Maui.RxUI
 
-[core-img]: https://img.shields.io/nuget/v/Xamvvm.Core.svg
-[core-link]: https://www.nuget.org/packages/Xamvvm.Core
-[forms-img]: https://img.shields.io/nuget/v/Xamvvm.Forms.svg
-[forms-link]: https://www.nuget.org/packages/Xamvvm.Forms
-[rx-img]: https://img.shields.io/nuget/v/Xamvvm.Forms.RxUI.svg
-[rx-link]: https://www.nuget.org/packages/Xamvvm.Forms.RxUI
-[mock-img]: https://img.shields.io/nuget/v/Xamvvm.Mock.svg
-[mock-link]: https://www.nuget.org/packages/Xamvvm.Mock
-
-[precore-img]: https://img.shields.io/nuget/vpre/Xamvvm.Core.svg
-[precore-link]: https://www.nuget.org/packages/Xamvvm.Core/prerelease
-[preforms-img]: https://img.shields.io/nuget/vpre/Xamvvm.Forms.svg
-[preforms-link]: https://www.nuget.org/packages/Xamvvm.Forms/prerelease
-[prerx-img]: https://img.shields.io/nuget/vpre/Xamvvm.Forms.RxUI.svg
-[prerx-link]: https://www.nuget.org/packages/Xamvvm.Forms.RxUI/prerelease
-[premock-img]: https://img.shields.io/nuget/vpre/Xamvvm.Mock.svg
-[premock-link]: https://www.nuget.org/packages/Xamvvm.Mock
