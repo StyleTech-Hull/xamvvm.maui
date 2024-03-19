@@ -1,9 +1,9 @@
 # ![xamvvm](http://res.cloudinary.com/escamoteur/image/upload/c_scale,w_150/v1476723686/xamvvm2_ufjcqq.png) 
 # Simple, fast and lightweight MVVM Framework for .Net Maui with fluent API
 
-|  Xamvvm.Forms             |         Xamvvm.Forms.RxUI          |
+|           Xamvvm.Maui                |         Xamvvm.Maui.RxUI          |
 |-------------------------------------:|:---------------------------------:|
-|  [![NuGet][maui-img]][maui-link]   |  [![NuGet][rx-img]][rx-link]  |
+|  [![NuGet][maui-img]][maui-link]     |  [![NuGet][rx-img]][rx-link]      |
 
 ## Background
 This is a fork of https://github.com/xamvvm/xamvvm to provide .Net MAUI support.
