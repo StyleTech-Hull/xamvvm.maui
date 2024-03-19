@@ -1,0 +1,6 @@
+﻿namespace Xamvvm
+{
+	public class BaseTabbedPage<TPageModel> : TabbedPage, IBasePage<TPageModel> where TPageModel : class, IBasePageModel
+	{
+	}
+}
