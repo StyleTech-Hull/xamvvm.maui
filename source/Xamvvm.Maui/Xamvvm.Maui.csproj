@@ -20,7 +20,7 @@
 		
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageId>Xamvvm.Maui</PackageId>
-		<Version>1.1.0</Version>
+		<Version>1.2.0</Version>
 		<Authors>StyleTech Solutions, Daniel Luberda, Thomas Burkhart</Authors>
 		<PackageProjectUrl>https://github.com/StyleTech-Hull/xamvvm.maui/</PackageProjectUrl>
 		<RepositoryUrl>$(ProjectUrl)</RepositoryUrl>
@@ -33,7 +33,7 @@
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<RepositoryType>git</RepositoryType>
 		<PackageTags>maui;xamarin;forms;xamarin.forms;mvvm;pagefactory;inotifypropertychanged;notifypropertychanged;caching;viewmodel;xamvvm</PackageTags>
-		<PackageReleaseNotes>Disabled nullable reference types until they can be implemented correctly</PackageReleaseNotes>
+		<PackageReleaseNotes>Added method to get whether a given page model is in the cache</PackageReleaseNotes>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>		
 		
 	</PropertyGroup>
