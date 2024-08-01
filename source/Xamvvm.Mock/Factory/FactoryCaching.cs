@@ -34,6 +34,24 @@ namespace Xamvvm
 			return page;
 		}
 
+		/// <inheritdoc />
+		public bool IsPageInCache<TPageModel>(string cacheKey = null) where TPageModel : class, IBasePageModel
+		{
+			var pageModelType = typeof(TPageModel);
+			var pageType = typeof(MockPage<>);
+
+			// check for DisableCacheAttribute
+			var noCachePageModelAttr = pageModelType.GetTypeInfo().GetCustomAttribute<DisableCacheAttribute>();
+			var noCachePageAttr = pageType.GetTypeInfo().GetCustomAttribute<DisableCacheAttribute>();
+			if (noCachePageModelAttr != null || noCachePageAttr != null)
+			{
+				return false;
+			}
+
+			var key = Tuple.Create(pageModelType, cacheKey);
+			return _pageCache.ContainsKey(key);
+		}
+
 		public virtual IBasePage<TPageModel> GetPageAsNewInstance<TPageModel>(TPageModel setPageModel = null) where TPageModel : class, IBasePageModel
 		{
 			var pageModelType = typeof(TPageModel);
