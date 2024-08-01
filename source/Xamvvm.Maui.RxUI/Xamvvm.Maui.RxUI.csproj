@@ -20,7 +20,7 @@
 
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageId>Xamvvm.Maui.RxUI</PackageId>
-		<Version>1.1.0</Version>
+		<Version>1.2.0</Version>
 		<Authors>StyleTech Solutions, Daniel Luberda, Thomas Burkhart</Authors>
 		<PackageProjectUrl>https://github.com/StyleTech-Hull/xamvvm.maui/</PackageProjectUrl>
 		<RepositoryUrl>$(ProjectUrl)</RepositoryUrl>
