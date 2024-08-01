@@ -28,6 +28,14 @@ namespace Xamvvm
 		IBasePage<IBasePageModel> GetPageFromCache(Type pageModelType, string cacheKey = null);
 
 		/// <summary>
+		/// Returns whether the page is currently in the cache.
+		/// </summary>
+		/// <typeparam name="TPageModel"></typeparam>
+		/// <param name="cacheKey"></param>
+		/// <returns></returns>
+		bool IsPageInCache<TPageModel>(string cacheKey = null) where TPageModel : class, IBasePageModel;
+
+		/// <summary>
 		/// Gets the page as new instance.
 		/// Optionally provide a page model (else will be set automatically)
 		/// </summary>
