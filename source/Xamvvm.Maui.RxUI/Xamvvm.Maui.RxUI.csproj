@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net8.0-android;net8.0-ios;net8.0-maccatalyst</TargetFrameworks>
+		<TargetFrameworks>net8.0-android;net8.0-ios;net8.0-maccatalyst;net8.0</TargetFrameworks>
 		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net8.0-windows10.0.19041.0</TargetFrameworks>
 		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
 		<!-- <TargetFrameworks>$(TargetFrameworks);net8.0-tizen</TargetFrameworks> -->
@@ -20,7 +20,7 @@
 
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageId>Xamvvm.Maui.RxUI</PackageId>
-		<Version>1.2.0</Version>
+		<Version>1.3.0</Version>
 		<Authors>StyleTech Solutions, Daniel Luberda, Thomas Burkhart</Authors>
 		<PackageProjectUrl>https://github.com/StyleTech-Hull/xamvvm.maui/</PackageProjectUrl>
 		<RepositoryUrl>$(ProjectUrl)</RepositoryUrl>
@@ -33,7 +33,7 @@
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<RepositoryType>git</RepositoryType>
 		<PackageTags>maui;xamarin;forms;xamarin.forms;mvvm;pagefactory;inotifypropertychanged;notifypropertychanged;caching;viewmodel;xamvvm;RxUI</PackageTags>
-		<PackageReleaseNotes>Disabled nullable reference types until they can be implemented correctly</PackageReleaseNotes>
+		<PackageReleaseNotes>Added .net8 as a target framework</PackageReleaseNotes>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		
 	</PropertyGroup>
