@@ -55,7 +55,7 @@ namespace Xamvvm
 		{
 			var tcs = new TaskCompletionSource<bool>();
 
-			Device.BeginInvokeOnMainThread(() =>
+			MainThread.BeginInvokeOnMainThread(() =>
 			{
 				try
 				{
